@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>url shortner</title>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <!-- top line -->
+    <svg class="line1" width="1440" height="35" viewBox="0 0 1440 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-0.0430456" y1="33.0005" x2="1439.96" y2="2.00046" stroke="#BDBDBD" stroke-width="4"
+            stroke-dasharray="19 19" />
+    </svg>
+    
+    <!-- triangle -->
+    <img class="triangle" src="./Assets/triangle.svg" alt="" />
+    
+    <!-- heading and sub-Head -->
+    <h1 class="heading font-1">URL Shortener</h1>
+    <div class="sub-heading font-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis egestas
+        condimentum dui et ac eget mauris blandit.
+    </div>
+    
+    <!-- URL input box -->
+    <div class="input-wrapper">
+        <form action="#" onsubmit="return false">
+            <input class="font-2" type="text" id="url-box" placeholder="Paste link here!" autofocus
+                autocomplete='off' /><br />
+            <button type="submit" class="shorten-button font-2" onclick='shorten()' id="convert-btn">Convert</button>
+        </form>
+    </div>
+    
+    <!-- output box -->
+    <div id="shortened-links">
+    
+    
+    </div>
+</body>
+</html>
